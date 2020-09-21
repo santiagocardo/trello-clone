@@ -1,0 +1,13 @@
+<h1>Show Activity</h1>
+
+<ul>
+
+  <li>
+    <strong>Action:</strong>
+    <%= @activity.action %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.activity_path(@conn, :edit, @activity) %></span>
+<span><%= link "Back", to: Routes.activity_path(@conn, :index) %></span>
